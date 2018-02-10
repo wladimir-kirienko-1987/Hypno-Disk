@@ -23,7 +23,6 @@ bool MainScene::init()
 	sprite = Sprite::create("unnamed.png");
 	sprite->setPosition(640 / 2, 480 / 2);
 	this->addChild(sprite, 0);
-	this->scheduleUpdate();
 	auto rotate = cocos2d::RotateBy::create(0.05, -45);
 	auto repeat1 = cocos2d::RepeatForever::create(rotate);
 	sprite->runAction(repeat1);
